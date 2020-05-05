@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version="4.7.2.98"?>
+<ProjectOptions
+  IecNamingConventions="true"
+  IecKeywordsAsStructureMembers="false"
+  IecExtendedConstants="true"
+  LogicalDirectory="C:\BrAutomation\Projekter_til_studiet\Opgave_med_Johan_simulering_31_3\Sortering_af_Kasser_med_robot\Logical\"
+  TempDirectory="C:\BrAutomation\Projekter_til_studiet\Opgave_med_Johan_simulering_31_3\Sortering_af_Kasser_med_robot\Temp\"
+  AutomationStudioVersion="4.7.2.98"
+  AutomationStudioEdition="Standard"
+  BuildCrossReference="false"
+  ActiveConfiguration="Config1"
+  CreateAnsiCDeclarations="false" />

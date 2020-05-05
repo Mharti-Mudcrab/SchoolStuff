@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExperiorData version="1.0">
+  <Station localPath="C:\Users\madsw\Documents\GitHub\SchoolStuff\Simuleringsopgave_2\RobotStudio\Simuleringsopgave_2.rsstn">
+    <Controllers>
+      <Controller systemId="{267D4A98-DCE4-4B9B-99B1-3F42CCA76708}" systemName="IRB_2600_20kg_1.65m_1">
+        <Robots>
+          <Robot id="{297b0e6a-c712-4ec2-ba1c-bc81f81bbf9a}" type="IRB2600_20_165" name="IRB2600_20_165__02" />
+        </Robots>
+        <Signals>
+          <Signal name="diMoveRight" type="DigitalInput" robotName="" />
+          <Signal name="diPick" type="DigitalInput" robotName="" />
+          <Signal name="doGripper" type="DigitalOutput" robotName="IRB2600_20_165__02" />
+        </Signals>
+      </Controller>
+    </Controllers>
+  </Station>
+</ExperiorData>

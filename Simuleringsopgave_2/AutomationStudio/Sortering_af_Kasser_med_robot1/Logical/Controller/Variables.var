@@ -1,0 +1,31 @@
+(*Input Variables*)
+VAR
+	diEaterSmall : BOOL;
+	diEaterMedium : BOOL;
+	diEaterLarge : BOOL;
+	diWeight_activated : BOOL;
+	diWeight_measurement : WORD;
+END_VAR
+(*Output Variables*)
+VAR
+	doRobotMoveRight : BOOL;
+	doRobotActivate : BOOL;
+	doBeltMotor1 : BOOL;
+	doBeltMotor2 : BOOL;
+	doBeltMotor3 : BOOL;
+	doEaterSmall : WORD;
+	doEaterMedium : WORD;
+	doEaterLarge : WORD;
+	doLightSmall : BOOL;
+	doLightMedium : BOOL;
+	doLightLarge : BOOL;
+END_VAR
+(*Function Blocks*)
+VAR
+	R_TRIG_Weight : R_TRIG;
+	F_TRIG_Weight : F_TRIG;
+	TON_Weight : TON;
+	CTU_Small : CTU;
+	CTU_Medium : CTU;
+	CTU_Large : CTU;
+END_VAR
