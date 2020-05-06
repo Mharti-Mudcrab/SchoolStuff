@@ -19,6 +19,18 @@ PROGRAM _CYCLIC
 		// Default is we set timer to stop belt.
 		TON_Weight.IN := TRUE;
 		
+		// Depending on bagage size, telling robot what to do.
+		doRobotActivate := TRUE;
+		IF diWeight_measurement < 5000 THEN
+			doRobotMoveRight := TRUE;
+		ELSIF diWeight_measurement < 7500 THEN
+			doRobotMoveRight := FALSE;
+		ELSE
+			// Box can pass and Robot should do nothing.
+			TON_Weight.IN := FALSE;
+			doRobotActivate := FALSE;
+		END_IF;
+		
 		// Setting correct light indicator
 		IF diWeight_measurement < 5000 THEN
 			doLightSmall := TRUE;
@@ -26,8 +38,6 @@ PROGRAM _CYCLIC
 			doLightMedium := TRUE;
 		ELSE
 			doLightLarge := TRUE;
-			// Box can pass and Robot should do nothing.
-			TON_Weight.IN := FALSE;
 		END_IF;
 	END_IF;
 	
@@ -35,17 +45,6 @@ PROGRAM _CYCLIC
 	IF TON_Weight.Q THEN
 		// Box is in place to be picked up, stopping BeltMotor.
 		doBeltMotor1 := FALSE;
-		
-		// Depending on bagage size, telling robot what to do.
-		doRobotActivate := TRUE;
-		IF diWeight_measurement < 5000 THEN
-			// Carry out SMALL box.
-			doRobotMoveRight := TRUE;
-		ELSE
-			// Carry out MEDIUM box.
-			doRobotMoveRight := FALSE;
-		END_IF;
-
 		TON_Weight.IN := FALSE;
 	END_IF;
 	

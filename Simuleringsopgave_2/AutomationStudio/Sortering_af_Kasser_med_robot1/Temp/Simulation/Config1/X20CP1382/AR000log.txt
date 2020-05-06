@@ -1,18 +1,27 @@
-Tue May  5 14:50:56 2020
+Wed May  6 10:35:15 2020
 COPYRIGHT (C) B&R Industrial Automation GmbH
 
-Tue May  5 14:50:56 2020
+Wed May  6 10:35:15 2020
 No ARsim registration found!
 
-Tue May  5 14:50:56 2020
-InstanceName: 01d622dbd177a630
+Wed May  6 10:35:15 2020
+InstanceName: 01d623814440f770
 
-Tue May  5 14:50:56 2020
+Wed May  6 10:35:15 2020
 WorkingDirectory: C:\Users\madsw\Documents\GitHub\SchoolStuff\Simuleringsopgave_2\AutomationStudio\Sortering_af_Kasser_med_robot1\Temp\Simulation\Config1\X20CP1382\
 
-Tue May  5 14:50:56 2020
+Wed May  6 10:35:15 2020
 COMMAND_COLDSTART
 
-Tue May  5 14:50:58 2020
+Wed May  6 10:35:17 2020
+Version: C4.72
+
+Wed May  6 11:03:14 2020
+COMMAND_TERMINATE
+
+Wed May  6 11:03:14 2020
+COMMAND_COLDSTART
+
+Wed May  6 11:03:17 2020
 Version: C4.72
 

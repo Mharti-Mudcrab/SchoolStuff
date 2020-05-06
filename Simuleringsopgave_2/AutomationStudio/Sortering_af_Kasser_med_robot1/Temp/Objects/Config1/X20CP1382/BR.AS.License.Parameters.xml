@@ -5,10 +5,10 @@
     <ConnectionParameters>/RT=1000 /DAIP=127.0.0.1 /REPO=11160 /ANSL=1 /AM=* /PT=11169</ConnectionParameters>
   </Connection>
   <AsProject>
-    <ApjFullFileName>C:\BrAutomation\Projekter_til_studiet\Opgave_med_Johan_simulering_31_3\Sortering_af_Kasser_med_robot\Sortering_af_Kasser_med_robot.apj</ApjFullFileName>
-    <ProjectName>Sortering_af_Kasser_med_robot</ProjectName>
+    <ApjFullFileName>C:\Users\madsw\Documents\GitHub\SchoolStuff\Simuleringsopgave_2\AutomationStudio\Sortering_af_Kasser_med_robot1\Sortering_af_Kasser_med_robot1.apj</ApjFullFileName>
+    <ProjectName>Sortering_af_Kasser_med_robot1</ProjectName>
     <ActiveConfigurationName>Config1</ActiveConfigurationName>
-    <LicenseDataFolder>C:\BrAutomation\Projekter_til_studiet\Opgave_med_Johan_simulering_31_3\Sortering_af_Kasser_med_robot\Temp\Objects\Config1\X20CP1382</LicenseDataFolder>
+    <LicenseDataFolder>C:\Users\madsw\Documents\GitHub\SchoolStuff\Simuleringsopgave_2\AutomationStudio\Sortering_af_Kasser_med_robot1\Temp\Objects\Config1\X20CP1382</LicenseDataFolder>
   </AsProject>
   <General>
     <DeleteParameterFile>false</DeleteParameterFile>

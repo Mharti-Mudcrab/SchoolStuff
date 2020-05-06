@@ -15,11 +15,11 @@
       Source="Controller"
       Language="IEC">
       <InternalFile
-        Path="C:\BrAutomation\Projekter_til_studiet\Opgave_med_Johan_simulering_31_3\Sortering_af_Kasser_med_robot\Temp\Objects\Config1\X20CP1382\Controller\Main.st.var" />
+        Path="C:\Users\madsw\Documents\GitHub\SchoolStuff\Simuleringsopgave_2\AutomationStudio\Sortering_af_Kasser_med_robot1\Temp\Objects\Config1\X20CP1382\Controller\Main.st.var" />
       <File
-        Path="C:\BrAutomation\Projekter_til_studiet\Opgave_med_Johan_simulering_31_3\Sortering_af_Kasser_med_robot\Logical\Controller\Types.typ" />
+        Path="C:\Users\madsw\Documents\GitHub\SchoolStuff\Simuleringsopgave_2\AutomationStudio\Sortering_af_Kasser_med_robot1\Logical\Controller\Types.typ" />
       <File
-        Path="C:\BrAutomation\Projekter_til_studiet\Opgave_med_Johan_simulering_31_3\Sortering_af_Kasser_med_robot\Logical\Controller\Variables.var" />
+        Path="C:\Users\madsw\Documents\GitHub\SchoolStuff\Simuleringsopgave_2\AutomationStudio\Sortering_af_Kasser_med_robot1\Logical\Controller\Variables.var" />
     </Task>
   </TaskClass>
   <TaskClass
