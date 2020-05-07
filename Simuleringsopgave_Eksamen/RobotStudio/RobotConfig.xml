@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExperiorData version="1.0">
+  <Station localPath="C:\Users\madsw\Documents\GitHub\SchoolStuff\Simuleringsopgave_Eksamen\RobotStudio\Solution\Eksamens\Stations\Eksamens.rsstn">
+    <Controllers>
+      <Controller systemId="{C33908A4-17F0-4003-AB92-D607328A473F}" systemName="Virtual_controller">
+        <Robots>
+          <Robot id="{2f00d3bf-1f4c-4eba-8028-4f0be3234b49}" type="IRB120_3_58" name="IRB120_3_58__01_2" />
+          <Robot id="{3d117bb6-0239-4d80-b0d1-3e6ae427c9cd}" type="IRB2600_20_165" name="IRB2600_20_165_C_01_2" />
+          <Robot id="{282a9ffc-22c1-4ea8-9506-5b64d05c731b}" type="IRB120_3_58" name="IRB120_3_58__01_3" />
+        </Robots>
+        <Signals>
+          <Signal name="diStackerLeftPick" type="DigitalInput" robotName="" />
+          <Signal name="diStackerRightPick" type="DigitalInput" robotName="" />
+          <Signal name="diSorterPick" type="DigitalInput" robotName="" />
+          <Signal name="doStackerRightGripper" type="DigitalOutput" robotName="IRB120_3_58__01_2" />
+          <Signal name="doSorterGripper" type="DigitalOutput" robotName="IRB2600_20_165_C_01_2" />
+          <Signal name="doStackerLeftGripper" type="DigitalOutput" robotName="IRB120_3_58__01_3" />
+        </Signals>
+      </Controller>
+    </Controllers>
+  </Station>
+</ExperiorData>
