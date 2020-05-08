@@ -1,0 +1,13 @@
+VAR
+	pos2OutOfPlace : BOOL;
+	pos1OutOfPlace : BOOL;
+	goBtn : BOOL;
+	Eater : BOOL;
+	convStart : BOOL;
+	convStop : BOOL;
+	robotToPos2 : BOOL;
+	robotToPos1 : BOOL;
+	pickerRobotRight : RobotArm;
+	pickerRobotLeft : RobotArm;
+	SorterRobot : RobotArm;
+END_VAR
