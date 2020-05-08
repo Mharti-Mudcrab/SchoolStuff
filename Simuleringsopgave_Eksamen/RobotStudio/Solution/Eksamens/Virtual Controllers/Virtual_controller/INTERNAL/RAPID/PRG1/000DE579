@@ -6,7 +6,7 @@ MODULE Module1
     CONST robtarget Right12:=[[305.5,-625.945,197.406],[0,0,1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget Right21:=[[305.5,-515.945,302.406],[0,0,1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     
-    VAR inttypes stackCount;
+    VAR intnum stackCount := 0;
     !***********************************************************
     !
     ! Module:  Right Stacker robot
@@ -22,6 +22,8 @@ MODULE Module1
         MoveJ HomeRight, v5000, z100, tool0;
         ! Move when There is and object and Left arm is not in the way.
         IF diStackerRightPick = 1 THEN
+            MoveJ PickRight, v5000, z100, tool0;
+            MoveJ HomeRight, v5000, z100, tool0;
             
         ENDIF
     ENDPROC
