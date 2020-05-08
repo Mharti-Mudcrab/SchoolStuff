@@ -1,0 +1,14 @@
+Comment: Error closing connection with [TCP-E-S] 127.0.0.1:50251 -> 127.0.0.1:1497 (ajLfDjZmhk6Id5nUKb3LpQ). Close called from 13 due to error.
+
+Base Exception Type: System.ObjectDisposedException: Sikker handle er lukket.
+   ved System.Runtime.InteropServices.SafeHandle.DangerousAddRef(Boolean& success)
+   ved System.StubHelpers.StubHelpers.SafeHandleAddRef(SafeHandle pHandle, Boolean& success)
+   ved Microsoft.Win32.Win32Native.SetEvent(SafeWaitHandle handle)
+   ved System.Threading.EventWaitHandle.Set()
+   ved NetworkCommsDotNet.Connections.Connection.CloseConnection(Boolean closeDueToError, Int32 logLocation)
+
+Stack Trace:    ved System.Runtime.InteropServices.SafeHandle.DangerousAddRef(Boolean& success)
+   ved System.StubHelpers.StubHelpers.SafeHandleAddRef(SafeHandle pHandle, Boolean& success)
+   ved Microsoft.Win32.Win32Native.SetEvent(SafeWaitHandle handle)
+   ved System.Threading.EventWaitHandle.Set()
+   ved NetworkCommsDotNet.Connections.Connection.CloseConnection(Boolean closeDueToError, Int32 logLocation)
