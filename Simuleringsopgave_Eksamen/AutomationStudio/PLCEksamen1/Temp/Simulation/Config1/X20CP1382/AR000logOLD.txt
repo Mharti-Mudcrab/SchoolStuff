@@ -1,0 +1,18 @@
+Sun May 10 21:35:10 2020
+COPYRIGHT (C) B&R Industrial Automation GmbH
+
+Sun May 10 21:35:10 2020
+No ARsim registration found!
+
+Sun May 10 21:35:10 2020
+InstanceName: 01d627021e3891d0
+
+Sun May 10 21:35:10 2020
+WorkingDirectory: C:\projects\PLCEksamen\Temp\Simulation\Config1\X20CP1382\
+
+Sun May 10 21:35:10 2020
+COMMAND_COLDSTART
+
+Sun May 10 21:35:12 2020
+Version: D4.52
+
