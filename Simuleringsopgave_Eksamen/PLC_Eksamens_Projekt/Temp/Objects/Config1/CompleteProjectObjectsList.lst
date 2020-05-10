@@ -124,7 +124,7 @@
     Path="C:\Users\Johan\Documents\GitHub\SchoolStuff\Simuleringsopgave_Eksamen\PLC_Eksamens_Projekt\Logical\Program\Main.st"
     LogicalPath="Program.Main.st"
     Type="File"
-    LastWriteTime="132334979174192584"
+    LastWriteTime="132335709419253419"
     Private="false" />
   <Object
     Path="C:\Users\Johan\Documents\GitHub\SchoolStuff\Simuleringsopgave_Eksamen\PLC_Eksamens_Projekt\Logical\Program\Types.typ"
@@ -147,7 +147,7 @@
     Path="C:\Users\Johan\Documents\GitHub\SchoolStuff\Simuleringsopgave_Eksamen\PLC_Eksamens_Projekt\Physical\Config1\Hardware.hw"
     LogicalPath="Config1.Hardware.hw"
     Type="File"
-    LastWriteTime="132334041646451257"
+    LastWriteTime="132335771256692779"
     Private="false" />
   <Object
     Path="C:\Users\Johan\Documents\GitHub\SchoolStuff\Simuleringsopgave_Eksamen\PLC_Eksamens_Projekt\Physical\Config1\Hardware.hwl"
@@ -300,6 +300,6 @@
     Path="C:\Users\Johan\Documents\GitHub\SchoolStuff\Simuleringsopgave_Eksamen\PLC_Eksamens_Projekt\Physical\Config1\Hardware.jpg"
     LogicalPath="Config1.Hardware.jpg"
     Type="File"
-    LastWriteTime="132334208978644775"
+    LastWriteTime="132335735324071630"
     Private="false" />
 </Objects>

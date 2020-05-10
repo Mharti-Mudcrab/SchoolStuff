@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio Version=4.5.2.102?>
 <State Top="0" Left="0" Width="0" Height="0" WindowState="Normal" xmlns="http://br-automation.co.at/AS/State">
-  <TextEdit ID="C:\Users\Johan\Documents\GitHub\SchoolStuff\Simuleringsopgave_Eksamen\PLC_Eksamens_Projekt\Logical\Program\Main.st" CaretLine="38" CaretColumn="58" FirstVisibleLine="16">
+  <TextEdit ID="C:\Users\Johan\Documents\GitHub\SchoolStuff\Simuleringsopgave_Eksamen\PLC_Eksamens_Projekt\Logical\Program\Main.st" CaretLine="56" CaretColumn="1" FirstVisibleLine="15">
     <Bookmarks />
   </TextEdit>
   <TreeView ID="C:\Users\Johan\Documents\GitHub\SchoolStuff\Simuleringsopgave_Eksamen\PLC_Eksamens_Projekt\Logical\Program\Variables.var" EditColumn="1" TopRow="0" HorizontalScrollOffset="0" SortedColumn="0">
@@ -19,7 +19,9 @@
       <Column Index="10" Width="0" Position="10" />
     </Columns>
     <ExpandedNodes />
-    <SelectedNodes />
+    <SelectedNodes>
+      <SelectedNode Row="9" />
+    </SelectedNodes>
     <ZoomIndices />
   </TreeView>
 </State>

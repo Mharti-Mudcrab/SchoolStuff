@@ -27,25 +27,23 @@ PROGRAM _CYCLIC
 	END_IF;
 	IF pos1OutOfPlace = TRUE AND pos2OutOfPlace = FALSE THEN
 		robotToPos1 := TRUE;
-		IF SorterRobot.Delivering = TRUE AND Eater = TRUE THEN
-			SorterRobot.Home := TRUE;
-			SorterRobot.Delivering := FALSE;
+		IF SorterRobot.Placing = TRUE AND Eater = TRUE THEN
+			SorterRobot.Placing := FALSE;
 		END_IF;
 	END_IF;
 	IF pos2OutOfPlace = TRUE AND pos1OutOfPlace = FALSE THEN
 		
 			robotToPos2 := TRUE;
-			IF SorterRobot.Delivering = TRUE AND Eater = TRUE THEN
-			SorterRobot.Delivering := FALSE;
+			IF SorterRobot.Placing = TRUE AND Eater = TRUE THEN
+			SorterRobot.Placing := FALSE;
 		END_IF;
 	END_IF;	
 	IF pos2OutOfPlace = TRUE AND pos1OutOfPlace = TRUE THEN
 		convStop := TRUE;
 		robotToPos1 := TRUE;
-		IF SorterRobot.Delivering = TRUE AND Eater = TRUE THEN
-			SorterRobot.Home := TRUE;
+		IF SorterRobot.Placing = TRUE AND Eater = TRUE THEN
 			robotToPos2 := TRUE;
-			SorterRobot.Delivering := FALSE;
+			SorterRobot.Placing := FALSE;
 		END_IF;
 		
 	END_IF;

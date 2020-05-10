@@ -1,0 +1,21 @@
+Sun May 10 10:29:30 2020
+COPYRIGHT (C) B&R Industrial Automation GmbH
+
+Sun May 10 10:29:30 2020
+No ARsim registration found!
+
+Sun May 10 10:29:30 2020
+InstanceName: 01d626a5206d1f50
+
+Sun May 10 10:29:30 2020
+WorkingDirectory: C:\Users\Johan\Documents\GitHub\SchoolStuff\Simuleringsopgave_Eksamen\PLC_Eksamens_Projekt\Temp\Simulation\Config1\X20CP1382\
+
+Sun May 10 10:29:30 2020
+COMMAND_COLDSTART
+
+Sun May 10 10:29:33 2020
+Version: D4.52
+
+Sun May 10 10:50:08 2020
+COMMAND_TERMINATE
+
