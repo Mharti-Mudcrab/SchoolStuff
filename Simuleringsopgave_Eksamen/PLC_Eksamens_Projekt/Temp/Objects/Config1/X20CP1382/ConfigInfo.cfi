@@ -15,11 +15,11 @@
       Source="Program"
       Language="IEC">
       <InternalFile
-        Path="C:\projects\PLCEksamen\Temp\Objects\Config1\X20CP1382\Program\Main.st.var" />
+        Path="C:\Users\Johan\Documents\GitHub\SchoolStuff\Simuleringsopgave_Eksamen\PLC_Eksamens_Projekt\Temp\Objects\Config1\X20CP1382\Program\Main.st.var" />
       <File
-        Path="C:\projects\PLCEksamen\Logical\Program\Types.typ" />
+        Path="C:\Users\Johan\Documents\GitHub\SchoolStuff\Simuleringsopgave_Eksamen\PLC_Eksamens_Projekt\Logical\Program\Types.typ" />
       <File
-        Path="C:\projects\PLCEksamen\Logical\Program\Variables.var" />
+        Path="C:\Users\Johan\Documents\GitHub\SchoolStuff\Simuleringsopgave_Eksamen\PLC_Eksamens_Projekt\Logical\Program\Variables.var" />
     </Task>
   </TaskClass>
   <TaskClass

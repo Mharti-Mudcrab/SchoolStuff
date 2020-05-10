@@ -7,13 +7,13 @@ export AS_COMPANY_NAME :=
 export AS_USER_NAME := Johan
 export AS_PATH := E:/Automation Studio/AS45
 export AS_BIN_PATH := E:/Automation Studio/AS45/bin-en
-export AS_PROJECT_PATH := C:/projects/PLCEksamen
-export AS_PROJECT_NAME := PLCEksamen
+export AS_PROJECT_PATH := C:/Users/Johan/Documents/GitHub/SchoolStuff/Simuleringsopgave_Eksamen/PLC_Eksamens_Projekt
+export AS_PROJECT_NAME := PLC_Eksamens_Projekt
 export AS_SYSTEM_PATH := E:/Automation\ Studio/AS/System
 export AS_VC_PATH := E:/Automation\ Studio/AS45/AS/VC
-export AS_TEMP_PATH := C:/projects/PLCEksamen/Temp
+export AS_TEMP_PATH := C:/Users/Johan/Documents/GitHub/SchoolStuff/Simuleringsopgave_Eksamen/PLC_Eksamens_Projekt/Temp
 export AS_CONFIGURATION := Config1
-export AS_BINARIES_PATH := C:/projects/PLCEksamen/Binaries
+export AS_BINARIES_PATH := C:/Users/Johan/Documents/GitHub/SchoolStuff/Simuleringsopgave_Eksamen/PLC_Eksamens_Projekt/Binaries
 export AS_GNU_INST_PATH := E:/Automation\ Studio/AS45/AS/GnuInst/V4.1.2
 export AS_GNU_BIN_PATH := $(AS_GNU_INST_PATH)/bin
 export AS_GNU_INST_PATH_SUB_MAKE := E:/Automation Studio/AS45/AS/GnuInst/V4.1.2
@@ -21,11 +21,11 @@ export AS_GNU_BIN_PATH_SUB_MAKE := $(AS_GNU_INST_PATH_SUB_MAKE)/bin
 export AS_INSTALL_PATH := E:/Automation\ Studio/AS45
 export WIN32_AS_PATH := "E:\Automation Studio\AS45"
 export WIN32_AS_BIN_PATH := "E:\Automation Studio\AS45\bin-en"
-export WIN32_AS_PROJECT_PATH := "C:\projects\PLCEksamen"
+export WIN32_AS_PROJECT_PATH := "C:\Users\Johan\Documents\GitHub\SchoolStuff\Simuleringsopgave_Eksamen\PLC_Eksamens_Projekt"
 export WIN32_AS_SYSTEM_PATH := "E:\Automation Studio\AS\System"
 export WIN32_AS_VC_PATH := "E:\Automation Studio\AS45\AS\VC"
-export WIN32_AS_TEMP_PATH := "C:\projects\PLCEksamen\Temp"
-export WIN32_AS_BINARIES_PATH := "C:\projects\PLCEksamen\Binaries"
+export WIN32_AS_TEMP_PATH := "C:\Users\Johan\Documents\GitHub\SchoolStuff\Simuleringsopgave_Eksamen\PLC_Eksamens_Projekt\Temp"
+export WIN32_AS_BINARIES_PATH := "C:\Users\Johan\Documents\GitHub\SchoolStuff\Simuleringsopgave_Eksamen\PLC_Eksamens_Projekt\Binaries"
 export WIN32_AS_GNU_INST_PATH := "E:\Automation Studio\AS45\AS\GnuInst\V4.1.2"
 export WIN32_AS_GNU_BIN_PATH := "$(WIN32_AS_GNU_INST_PATH)\\bin" 
 export WIN32_AS_INSTALL_PATH := "E:\Automation Studio\AS45"
@@ -34,5 +34,5 @@ export WIN32_AS_INSTALL_PATH := "E:\Automation Studio\AS45"
 
 ProjectMakeFile:
 
-	@'$(AS_BIN_PATH)/BR.AS.AnalyseProject.exe' '$(AS_PROJECT_PATH)/PLCEksamen.apj' -t '$(AS_TEMP_PATH)' -c '$(AS_CONFIGURATION)' -o '$(AS_BINARIES_PATH)'   -sfas -buildMode 'Build'   
+	@'$(AS_BIN_PATH)/BR.AS.AnalyseProject.exe' '$(AS_PROJECT_PATH)/PLC_Eksamens_Projekt.apj' -t '$(AS_TEMP_PATH)' -c '$(AS_CONFIGURATION)' -o '$(AS_BINARIES_PATH)'   -sfas -buildMode 'Build'   
 

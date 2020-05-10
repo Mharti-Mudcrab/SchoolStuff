@@ -9,6 +9,7 @@ PROGRAM _INIT
 	convStop := FALSE; // output til experior
 	robotToPos1 := FALSE; // output til robot
 	robotToPos2 := FALSE; // output til robot
+
 	 
 END_PROGRAM
 
@@ -16,9 +17,7 @@ PROGRAM _CYCLIC
 	(* Go knappen som starter hele programmet*)
 	IF goBtn = TRUE THEN
 		convStart := TRUE;
-		SorterRobot.Home := TRUE;
-		pickerRobotLeft.Home := TRUE;
-		pickerRobotRight.Home := TRUE;
+		
 	ELSE
 		convStop := TRUE;
 	END_IF;
@@ -26,22 +25,21 @@ PROGRAM _CYCLIC
 	IF convStop = TRUE THEN
 		convStart := FALSE;
 	END_IF;
-	IF SorterRobot.Home = TRUE AND pos1OutOfPlace = TRUE AND pos2OutOfPlace = FALSE THEN
+	IF pos1OutOfPlace = TRUE AND pos2OutOfPlace = FALSE THEN
 		robotToPos1 := TRUE;
 		IF SorterRobot.Delivering = TRUE AND Eater = TRUE THEN
 			SorterRobot.Home := TRUE;
 			SorterRobot.Delivering := FALSE;
 		END_IF;
 	END_IF;
-	IF SorterRobot.Home = TRUE AND pos2OutOfPlace = TRUE AND pos1OutOfPlace = FALSE THEN
+	IF pos2OutOfPlace = TRUE AND pos1OutOfPlace = FALSE THEN
 		
 			robotToPos2 := TRUE;
 			IF SorterRobot.Delivering = TRUE AND Eater = TRUE THEN
-				SorterRobot.Home := TRUE;
-				SorterRobot.Delivering := FALSE;
+			SorterRobot.Delivering := FALSE;
 		END_IF;
 	END_IF;	
-	IF SorterRobot.Home = TRUE AND pos2OutOfPlace = TRUE AND pos1OutOfPlace = TRUE THEN
+	IF pos2OutOfPlace = TRUE AND pos1OutOfPlace = TRUE THEN
 		convStop := TRUE;
 		robotToPos1 := TRUE;
 		IF SorterRobot.Delivering = TRUE AND Eater = TRUE THEN

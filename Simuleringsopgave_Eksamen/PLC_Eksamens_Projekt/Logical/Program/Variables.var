@@ -10,4 +10,6 @@ VAR
 	pickerRobotRight : RobotArm;
 	pickerRobotLeft : RobotArm;
 	SorterRobot : RobotArm;
+	PickerSpot : BOOL;
+	ForPicking : f_trig;
 END_VAR
