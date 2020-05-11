@@ -41,7 +41,7 @@ PROGRAM _CYCLIC
 	//diConvMainStop := FALSE;
 	//END_IF;
 	
-	IF diConvMainRunning = TRUE AND diPos1OutOfPlace = TRUE AND diPos2OutOfPlace = FALSE THEN
+	IF diConvMainRunning = TRUE AND diPos1OutOfPlaceWeight = TRUE AND diPos2OutOfPlaceWeight = FALSE THEN
 		doRobotToPos1 := TRUE;
 		doSorterPick := TRUE;
 	ELSE
