@@ -12,9 +12,7 @@ PROGRAM _INIT
 	doRobotToPos1 := FALSE; // output til robot
 	doRobotToPos2 := FALSE; // output til robot
 	Timer.PT := T#2s;
-	TimerSideConv.PT := T#4s;
-
-	 
+	TimerSideConv.PT := T#4s; 
 END_PROGRAM
 
 PROGRAM _CYCLIC
@@ -41,7 +39,11 @@ PROGRAM _CYCLIC
 	//diConvMainStop := FALSE;
 	//END_IF;
 	
-	IF diConvMainRunning = TRUE AND diPos1OutOfPlaceWeight = TRUE AND diPos2OutOfPlaceWeight = FALSE THEN
+	IF diConvMainRunning = TRUE AND diRightPosWeight > 300 THEN
+		doSorterPick := TRUE;
+
+	END_IF;
+(*	IF diConvMainRunning = TRUE AND diPos1OutOfPlaceWeight = TRUE AND diPos2OutOfPlaceWeight = FALSE THEN
 		doRobotToPos1 := TRUE;
 		doSorterPick := TRUE;
 	ELSE
@@ -70,7 +72,7 @@ PROGRAM _CYCLIC
 			
 		END_IF;	
 
-	END_IF;
+	END_IF; *)
 	// denne IF sætning styrer fodning af kasser. tæller op til 2, går derefter ned til 0 igen og starter forfra. stiger 1 hver gang Timer.Q pulser.
 	IF FeedCount = 0 AND Timer.Q THEN
 		doFeederLeft := TRUE;
@@ -117,8 +119,8 @@ PROGRAM _CYCLIC
 	Timer();
 	toPicker(CLK := diPickingSensor);
 	stackingTrig(CLK := Stacked);
-	rightTrig (CLK := pickerRobotRight.Delivering)
-	leftTrig (CLK := pickerRobotLeft.Delivering)
+	rightTrig (CLK := pickerRobotRight.Delivering);
+	leftTrig (CLK := pickerRobotLeft.Delivering);
 			END_PROGRAM
 
 			PROGRAM _EXIT
