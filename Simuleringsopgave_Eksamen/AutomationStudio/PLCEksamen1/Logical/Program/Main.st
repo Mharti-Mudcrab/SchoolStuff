@@ -2,13 +2,13 @@
 PROGRAM _INIT
 	(* Init værdier for alt i programmet *)
 	
-	diGoBtn := FALSE; // input fra experior
+	doGoBtn := FALSE; // input fra experior
 	diPos1OutOfPlace := FALSE; // input fra experior weight 1
 	diPos2OutOfPlace := FALSE; // input fra experior weight 2
 	diConvMainRunning := FALSE; // input fra experior om bånd status på hovedbånd
 	diConvSideRunning := FALSE; // input fra experior om bånd status på afleverings bånd
-	diConvMainStart := FALSE; // output til experior
-	diConvMainStop := FALSE;
+	doConvMainStart := FALSE; // output til experior
+	ConvMainStop := FALSE;
 	doRobotToPos1 := FALSE; // output til robot
 	doRobotToPos2 := FALSE; // output til robot
 	Timer.PT := T#10s;
@@ -18,14 +18,20 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	(* Go knappen som starter hele programmet*)
-	IF diGoBtn = TRUE AND diConvMainStop = FALSE THEN
-		diConvMainStart := TRUE;
+	IF doGoBtn = TRUE AND ConvMainStop = FALSE THEN
+		doConvMainStart := TRUE;
 		Timer.IN := TRUE;
-	ELSIF diGoBtn = TRUE AND diConvMainStop = TRUE THEN
-		diConvMainStart := FALSE;
+		
+	ELSIF doGoBtn = TRUE AND ConvMainStop = TRUE THEN
+		doConvMainStart := FALSE;
 		Timer.IN := FALSE;
+		
+	ELSIF doGoBtn = FALSE AND ConvMainStop = TRUE THEN
+		ConvMainStop := FALSE;
+		doConvMainStart := FALSE;
+		
 	ELSE
-		diConvMainStop := TRUE;
+		ConvMainStop := TRUE;
 		Timer.IN := FALSE;
 	END_IF;
 	(*Hvis der trykkes stop eller bliver sendt stop signal skal båndet stoppe.*)
@@ -33,7 +39,6 @@ PROGRAM _CYCLIC
 	//diConvMainStart := FALSE;
 	//diConvMainStop := FALSE;
 	//END_IF;
-	
 	
 	IF diConvMainRunning = TRUE AND diPos1OutOfPlace = TRUE AND diPos2OutOfPlace = FALSE THEN
 		doRobotToPos1 := TRUE;
@@ -48,7 +53,7 @@ PROGRAM _CYCLIC
 		doRobotToPos2 := FALSE;
 	END_IF;	
 	IF diConvMainRunning = TRUE AND diPos2OutOfPlace = TRUE AND diPos1OutOfPlace = TRUE THEN
-		diConvMainStop := TRUE;
+		ConvMainStop := TRUE;
 		doRobotToPos1 := TRUE;
 		doSorterPick := TRUE;
 		
@@ -59,7 +64,7 @@ PROGRAM _CYCLIC
 			
 			IF SorterRobot.Delivering = TRUE THEN
 				doRobotToPos2 := FALSE;
-				diConvMainStop := FALSE;
+				ConvMainStop := FALSE;
 			END_IF;
 			
 		END_IF;	
@@ -102,10 +107,10 @@ PROGRAM _CYCLIC
 		Stacked := Stacked+1;
 	END_IF;
 	IF Stacked = 4 THEN
-		diConvSideStart := TRUE;
+		doConvSideStart := TRUE;
 		Stacked := 0;
 	ELSIF diConvSideRunning = TRUE AND Stacked < 4  THEN
-		diConvSideStart := FALSE;
+		doConvSideStart := FALSE;
 	END_IF;
 	
 	

@@ -147,7 +147,7 @@
     Path="C:\Users\Johan\Documents\GitHub\SchoolStuff\Simuleringsopgave_Eksamen\AutomationStudio\PLCEksamen1\Logical\Program\Main.st"
     LogicalPath="Program.Main.st"
     Type="File"
-    LastWriteTime="132336687570171600"
+    LastWriteTime="132336741678497468"
     Private="false" />
   <Object
     Path="C:\Users\Johan\Documents\GitHub\SchoolStuff\Simuleringsopgave_Eksamen\AutomationStudio\PLCEksamen1\Logical\Program\Types.typ"
@@ -159,7 +159,7 @@
     Path="C:\Users\Johan\Documents\GitHub\SchoolStuff\Simuleringsopgave_Eksamen\AutomationStudio\PLCEksamen1\Logical\Program\Variables.var"
     LogicalPath="Program.Variables.var"
     Type="File"
-    LastWriteTime="132336616394772493"
+    LastWriteTime="132336726383301567"
     Private="true" />
   <Object
     Path="C:\Users\Johan\Documents\GitHub\SchoolStuff\Simuleringsopgave_Eksamen\AutomationStudio\PLCEksamen1\Physical\Config1\Config.pkg"
@@ -170,7 +170,7 @@
     Path="C:\Users\Johan\Documents\GitHub\SchoolStuff\Simuleringsopgave_Eksamen\AutomationStudio\PLCEksamen1\Physical\Config1\Hardware.hw"
     LogicalPath="Config1.Hardware.hw"
     Type="File"
-    LastWriteTime="132336687584547035"
+    LastWriteTime="132336746577912825"
     Private="false" />
   <Object
     Path="C:\Users\Johan\Documents\GitHub\SchoolStuff\Simuleringsopgave_Eksamen\AutomationStudio\PLCEksamen1\Physical\Config1\Hardware.hwl"
