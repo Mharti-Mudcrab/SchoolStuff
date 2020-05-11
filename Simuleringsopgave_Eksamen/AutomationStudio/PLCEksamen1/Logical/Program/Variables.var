@@ -2,7 +2,6 @@ VAR
 	diPos2OutOfPlace : BOOL;
 	diPos1OutOfPlace : BOOL;
 	diGoBtn : BOOL;
-	diEater : BOOL;
 	diConvMainStart : BOOL;
 	diConvMainStop : BOOL;
 	doRobotToPos2 : BOOL;
@@ -26,5 +25,6 @@ VAR
 	doFeederLeft : BOOL;
 	doFeederRight : BOOL;
 	FeedCount : USINT;
+	Stacked : USINT;
 	Timer : TON;
 END_VAR

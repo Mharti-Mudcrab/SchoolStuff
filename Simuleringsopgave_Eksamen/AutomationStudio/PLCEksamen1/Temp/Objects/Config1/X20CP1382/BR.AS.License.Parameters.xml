@@ -5,10 +5,10 @@
     <ConnectionParameters>/RT=1000 /AM=*</ConnectionParameters>
   </Connection>
   <AsProject>
-    <ApjFullFileName>C:\projects\PLCEksamen\PLCEksamen.apj</ApjFullFileName>
-    <ProjectName>PLCEksamen</ProjectName>
+    <ApjFullFileName>C:\Users\Johan\Documents\GitHub\SchoolStuff\Simuleringsopgave_Eksamen\AutomationStudio\PLCEksamen1\PLCEksamen1.apj</ApjFullFileName>
+    <ProjectName>PLCEksamen1</ProjectName>
     <ActiveConfigurationName>Config1</ActiveConfigurationName>
-    <LicenseDataFolder>C:\projects\PLCEksamen\Temp\Objects\Config1\X20CP1382</LicenseDataFolder>
+    <LicenseDataFolder>C:\Users\Johan\Documents\GitHub\SchoolStuff\Simuleringsopgave_Eksamen\AutomationStudio\PLCEksamen1\Temp\Objects\Config1\X20CP1382</LicenseDataFolder>
   </AsProject>
   <General>
     <DeleteParameterFile>false</DeleteParameterFile>
