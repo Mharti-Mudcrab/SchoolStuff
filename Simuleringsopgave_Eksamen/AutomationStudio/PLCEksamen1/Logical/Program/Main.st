@@ -23,6 +23,7 @@ PROGRAM _CYCLIC
 		Timer.IN := TRUE;
 	ELSE
 		diConvMainStop := TRUE;
+		Timer.IN := FALSE;
 	END_IF;
 	(*Hvis der trykkes stop eller bliver sendt stop signal skal båndet stoppe.*)
 	IF diConvMainStop = TRUE THEN
@@ -70,7 +71,6 @@ PROGRAM _CYCLIC
 		FeedCount := FeedCount+1;
 		Timer.IN := FALSE;
 	ELSIF FeedCount = 2 AND Timer.Q THEN
-	
 		doFeederRight := TRUE;
 		doFeederRight := FALSE;
 		Timer.IN := FALSE;
@@ -91,7 +91,7 @@ PROGRAM _CYCLIC
 	IF toBePicked <= 1 AND pickerRobotLeft.Delivering = TRUE THEN
 		toBePicked := toBePicked-1;
 		Stacked := Stacked+1;
-	ELSIF toBePicked <= 1 AND pickerRobotRight.Delivering = TRUE THEN
+	ELSIF toBePicked >= 1 AND pickerRobotRight.Delivering = TRUE THEN
 		toBePicked := toBePicked-1;
 		Stacked := Stacked+1;
 	END_IF;
