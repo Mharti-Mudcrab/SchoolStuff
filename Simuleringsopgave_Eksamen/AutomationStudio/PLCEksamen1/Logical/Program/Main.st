@@ -96,8 +96,8 @@ PROGRAM _CYCLIC
 		Stacked := Stacked+1;
 	END_IF;
 	IF Stacked = 4 THEN
-		diConvSideStart := TRUE
-		Stacked = 0;
+		diConvSideStart := TRUE;
+		Stacked := 0;
 	ELSIF diConvSideRunning = TRUE AND Stacked < 4  THEN
 		diConvSideStart := FALSE;
 	END_IF;
