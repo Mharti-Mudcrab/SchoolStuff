@@ -73,17 +73,17 @@ PROGRAM _CYCLIC
 	// denne IF sætning styrer fodning af kasser. tæller op til 2, går derefter ned til 0 igen og starter forfra. stiger 1 hver gang Timer.Q pulser.
 	IF FeedCount = 0 AND Timer.Q THEN
 		doFeederLeft := TRUE;
-		doFeederLeft := FALSE;
+		doFeederRight := FALSE;
 		FeedCount := FeedCount+1;
 		Timer.IN := FALSE;
 	ELSIF FeedCount = 1 AND Timer.Q THEN
 		doFeederMid := TRUE;
-		doFeederMid := FALSE;
+		doFeederLeft := FALSE;
 		FeedCount := FeedCount+1;
 		Timer.IN := FALSE;
 	ELSIF FeedCount = 2 AND Timer.Q THEN
 		doFeederRight := TRUE;
-		doFeederRight := FALSE;
+		doFeederMid := FALSE;
 		Timer.IN := FALSE;
 		FeedCount := 0;
 	END_IF;
