@@ -1,6 +1,8 @@
 VAR
 	diPos2OutOfPlace : BOOL;
 	diPos1OutOfPlace : BOOL;
+	diPos1OutOfPlaceWeight: INT;
+	diPos2OutOfPlaceWeight: INT;
 	doGoBtn : BOOL;
 	doConvMainStart : BOOL;
 	ConvMainStop : BOOL;
@@ -12,7 +14,9 @@ VAR
 	diConvSideRunning : BOOL;
 	diConvMainRunning : BOOL;
 	diRightPos : BOOL;
-	toPicker : f_trig;
+	toPicker : F_TRIG;
+	rightTrig: F_TRIG;
+	leftTrig: F_TRIG;
 	diPickingSensor : BOOL;
 	toBePicked : USINT;
 	doStackerRight : BOOL;
@@ -25,6 +29,9 @@ VAR
 	doFeederLeft : BOOL;
 	doFeederRight : BOOL;
 	FeedCount : USINT;
-	Stacked : USINT;
+	Stacked : BOOL;
+	stackingTrig : R_TRIG;
 	Timer : TON;
+	
+	TimerSideConv: TON;
 END_VAR
