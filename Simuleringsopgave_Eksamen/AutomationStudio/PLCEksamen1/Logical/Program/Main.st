@@ -11,7 +11,8 @@ PROGRAM _INIT
 	ConvMainStop := FALSE;
 	doRobotToPos1 := FALSE; // output til robot
 	doRobotToPos2 := FALSE; // output til robot
-	Timer.PT := T#10s;
+	Timer.PT := T#2s;
+	TimerSideConv.PT := T#4s;
 
 	 
 END_PROGRAM
@@ -99,23 +100,25 @@ PROGRAM _CYCLIC
 	ELSIF toBePicked <= 2 THEN
 		doStackerPick := TRUE;
 	END_IF;
-	IF toBePicked <= 1 AND pickerRobotLeft.Delivering = TRUE THEN
+	IF toBePicked <= 1 AND leftTrig.Q THEN
 		toBePicked := toBePicked-1;
-		Stacked := Stacked+1;
-	ELSIF toBePicked >= 1 AND pickerRobotRight.Delivering = TRUE THEN
+	ELSIF toBePicked >= 1 AND rightTrig.Q THEN
 		toBePicked := toBePicked-1;
-		Stacked := Stacked+1;
 	END_IF;
-	IF Stacked = 4 THEN
+	IF stackingTrig.Q THEN
 		doConvSideStart := TRUE;
-		Stacked := 0;
-	ELSIF diConvSideRunning = TRUE AND Stacked < 4  THEN
+		TimerSideConv.IN := TRUE;
+	ELSIF diConvSideRunning = TRUE AND TimerSideConv.Q THEN
 		doConvSideStart := FALSE;
+		TimerSideConv.IN := FALSE;
 	END_IF;
 	
-	
+	TimerSideConv();
 	Timer();
 	toPicker(CLK := diPickingSensor);
+	stackingTrig(CLK := Stacked);
+	rightTrig (CLK := pickerRobotRight.Delivering)
+	leftTrig (CLK := pickerRobotLeft.Delivering)
 			END_PROGRAM
 
 			PROGRAM _EXIT
