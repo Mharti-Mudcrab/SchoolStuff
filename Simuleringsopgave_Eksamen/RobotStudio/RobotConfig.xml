@@ -1,14 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ExperiorData version="1.0">
-  <Station localPath="C:\Users\madsw\Documents\GitHub\SchoolStuff\Simuleringsopgave_Eksamen\RobotStudio\Solution\Eksamens\Stations\Eksamens.rsstn">
+  <Station localPath="C:\Users\madsw\Documents\RobotStudio\Solutions\Eksamens_færdigt_udkast_10-05_11.57\Stations\Eksamens_færdigt_udkast_10-05_11.57.rsstn">
     <Controllers>
-      <Controller systemId="{C33908A4-17F0-4003-AB92-D607328A473F}" systemName="Virtual_controller">
+      <Controller systemId="{90239247-02C6-4855-86DD-E80577B81F40}" systemName="Virtual_controller">
         <Robots>
           <Robot id="{2f00d3bf-1f4c-4eba-8028-4f0be3234b49}" type="IRB120_3_58" name="IRB120_3_58__01_2" />
           <Robot id="{3d117bb6-0239-4d80-b0d1-3e6ae427c9cd}" type="IRB2600_20_165" name="IRB2600_20_165_C_01_2" />
           <Robot id="{282a9ffc-22c1-4ea8-9506-5b64d05c731b}" type="IRB120_3_58" name="IRB120_3_58__01_3" />
         </Robots>
         <Signals>
+          <Signal name="doSorterDelivering" type="DigitalOutput" robotName="" />
+          <Signal name="doStackDone" type="DigitalOutput" robotName="" />
+          <Signal name="diStackerPick" type="DigitalInput" robotName="" />
+          <Signal name="doStackerLeftDelivering" type="DigitalOutput" robotName="" />
+          <Signal name="doStackerRightDelivering" type="DigitalOutput" robotName="" />
+          <Signal name="doStackerLeftPickingUp" type="DigitalOutput" robotName="" />
+          <Signal name="doStackerRightPickingUp" type="DigitalOutput" robotName="" />
           <Signal name="diStackerLeftPick" type="DigitalInput" robotName="" />
           <Signal name="diStackerRightPick" type="DigitalInput" robotName="" />
           <Signal name="diSorterPick" type="DigitalInput" robotName="" />
