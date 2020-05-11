@@ -26,22 +26,25 @@ PROGRAM _CYCLIC
 	END_IF;
 	(*Hvis der trykkes stop eller bliver sendt stop signal skal båndet stoppe.*)
 	IF diConvMainStop = TRUE THEN
-			diConvMainStart := FALSE;
-			diConvMainStop := FALSE;
+		diConvMainStart := FALSE;
+		diConvMainStop := FALSE;
 	END_IF;
 	IF diConvMainRunning = TRUE AND diPos1OutOfPlace = TRUE AND diPos2OutOfPlace = FALSE THEN
 		doRobotToPos1 := TRUE;
+		doSorterPick := TRUE;
 	ELSE
 		doRobotToPos1 := FALSE;
 	END_IF;
 	IF diConvMainRunning = TRUE AND diPos2OutOfPlace = TRUE AND diPos1OutOfPlace = FALSE THEN
 		doRobotToPos2 := TRUE;
+		doSorterPick := TRUE;
 	ELSE
 		doRobotToPos2 := FALSE;
 	END_IF;	
 	IF diConvMainRunning = TRUE AND diPos2OutOfPlace = TRUE AND diPos1OutOfPlace = TRUE THEN
 		diConvMainStop := TRUE;
 		doRobotToPos1 := TRUE;
+		doSorterPick := TRUE;
 		
 		IF SorterRobot.Delivering = TRUE THEN
 			doRobotToPos1 := FALSE;
@@ -53,8 +56,9 @@ PROGRAM _CYCLIC
 			END_IF;
 			
 		END_IF;	
-// denne IF sætning styrer fodning af kasser. tæller op til 2, går derefter ned til 0 igen og starter forfra. stiger 1 hver gang Timer.Q pulser.
+
 	END_IF;
+	// denne IF sætning styrer fodning af kasser. tæller op til 2, går derefter ned til 0 igen og starter forfra. stiger 1 hver gang Timer.Q pulser.
 	IF FeedCount = 0 AND Timer.Q THEN
 		doFeederLeft := TRUE;
 		doFeederLeft := FALSE;
@@ -72,10 +76,33 @@ PROGRAM _CYCLIC
 		Timer.IN := FALSE;
 		FeedCount := 0;
 	END_IF;
-
+	//stacker kontrol kode
 	IF toPicker.Q THEN
 		toBePicked := toBePicked+1;
 	END_IF;
+	IF toBePicked = 1 THEN
+		doStackerLeft := TRUE;
+		IF pickerRobotLeft.Getting = TRUE OR pickerRobotLeft.Delivering = TRUE THEN
+			doStackerRight := TRUE;
+		END_IF;
+	ELSIF toBePicked <= 2 THEN
+		doStackerPick := TRUE;
+	END_IF;
+	IF toBePicked <= 1 AND pickerRobotLeft.Delivering = TRUE THEN
+		toBePicked := toBePicked-1;
+		Stacked := Stacked+1;
+	ELSIF toBePicked <= 1 AND pickerRobotRight.Delivering = TRUE THEN
+		toBePicked := toBePicked-1;
+		Stacked := Stacked+1;
+	END_IF;
+	IF Stacked = 4 THEN
+		diConvSideStart := TRUE
+		Stacked = 0;
+	ELSIF diConvSideRunning = TRUE AND Stacked < 4  THEN
+		diConvSideStart := FALSE;
+	END_IF;
+	
+	
 	Timer();
 	toPicker(CLK := diPickingSensor);
 			END_PROGRAM
