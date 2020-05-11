@@ -8,7 +8,7 @@ PROGRAM _INIT
 	diConvMainRunning := FALSE; // input fra experior om bånd status på hovedbånd
 	diConvSideRunning := FALSE; // input fra experior om bånd status på afleverings bånd
 	diConvMainStart := FALSE; // output til experior
-	diConvMainStop := FALSE; // output til experior
+	diConvMainStop := FALSE;
 	doRobotToPos1 := FALSE; // output til robot
 	doRobotToPos2 := FALSE; // output til robot
 	Timer.PT := T#10s;
@@ -18,18 +18,23 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	(* Go knappen som starter hele programmet*)
-	IF diGoBtn = TRUE THEN
+	IF diGoBtn = TRUE AND diConvMainStop = FALSE THEN
 		diConvMainStart := TRUE;
 		Timer.IN := TRUE;
+	ELSIF diGoBtn = TRUE AND diConvMainStop = TRUE THEN
+		diConvMainStart := FALSE;
+		Timer.IN := FALSE;
 	ELSE
 		diConvMainStop := TRUE;
 		Timer.IN := FALSE;
 	END_IF;
 	(*Hvis der trykkes stop eller bliver sendt stop signal skal båndet stoppe.*)
-	IF diConvMainStop = TRUE THEN
-		diConvMainStart := FALSE;
-		diConvMainStop := FALSE;
-	END_IF;
+	//IF diConvMainStop = TRUE THEN
+	//diConvMainStart := FALSE;
+	//diConvMainStop := FALSE;
+	//END_IF;
+	
+	
 	IF diConvMainRunning = TRUE AND diPos1OutOfPlace = TRUE AND diPos2OutOfPlace = FALSE THEN
 		doRobotToPos1 := TRUE;
 		doSorterPick := TRUE;
@@ -54,6 +59,7 @@ PROGRAM _CYCLIC
 			
 			IF SorterRobot.Delivering = TRUE THEN
 				doRobotToPos2 := FALSE;
+				diConvMainStop := FALSE;
 			END_IF;
 			
 		END_IF;	
