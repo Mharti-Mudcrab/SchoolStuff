@@ -1,9 +1,9 @@
 VAR
 	diPos2OutOfPlace : BOOL;
 	diPos1OutOfPlace : BOOL;
-	diGoBtn : BOOL;
-	diConvMainStart : BOOL;
-	diConvMainStop : BOOL;
+	doGoBtn : BOOL;
+	doConvMainStart : BOOL;
+	ConvMainStop : BOOL;
 	doRobotToPos2 : BOOL;
 	doRobotToPos1 : BOOL;
 	pickerRobotRight : RobotArm;
@@ -19,7 +19,7 @@ VAR
 	doStackerLeft : BOOL;
 	doStackerPick : BOOL;
 	doSorterPick : BOOL;
-	diConvSideStart : BOOL;
+	doConvSideStart : BOOL;
 	diConvSideStop : BOOL;
 	doFeederMid : BOOL;
 	doFeederLeft : BOOL;
