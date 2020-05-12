@@ -11,7 +11,7 @@ PROGRAM _INIT
 	ConvMainStop := FALSE;
 	doRobotToPos1 := FALSE; // output til robot
 	doRobotToPos2 := FALSE; // output til robot
-	Timer.PT := T#2s;
+	Timer.PT := T#3s;
 	TimerSideConv.PT := T#4s; 
 END_PROGRAM
 
@@ -94,13 +94,11 @@ PROGRAM _CYCLIC
 	IF toPicker.Q THEN
 		toBePicked := toBePicked+1;
 	END_IF;
-	IF toBePicked = 1 THEN
-		doStackerLeft := TRUE;
-		IF pickerRobotLeft.Getting = TRUE OR pickerRobotLeft.Delivering = TRUE THEN
-			doStackerRight := TRUE;
-		END_IF;
-	ELSIF toBePicked <= 2 THEN
+
+	IF toBePicked >= 1 THEN
 		doStackerPick := TRUE;
+	ELSIF toBePicked = 0 THEN
+		doStackerPick := FALSE;
 	END_IF;
 	IF toBePicked <= 1 AND leftTrig.Q THEN
 		toBePicked := toBePicked-1;

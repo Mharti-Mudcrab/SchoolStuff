@@ -1,27 +1,73 @@
 WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=Program 
-Position X=0 Y=0 Width=0 Height=0 TabWidth Name=150 Type=0 Scope=0 Force=0 Index=22 ASCIIString=0
+Position X=0 Y=0 Width=0 Height=0 TabWidth Name=150 Type=0 Scope=0 Force=0 Index=53 ASCIIString=0
                                     name                                     type force                                                            value level type len format place expand specs
-                                   Timer                                      TON    0 "                                                               *"    0   24    1    0    1    1         
-                                      IN                                     BOOL    0 "                                                            TRUE"    1    1    1    2    0    0         
-                                      PT                                     TIME    0 "                                                           T#10s"    1   12    1    1    0    0         
-                                       Q                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
-                                      ET                                     TIME    0 "                                                     T#03s_300ms"    1   12    1    1    0    0         
-                               StartTime                                     TIME    0 "                                                 T#27m_34s_640ms"    1   12    1    1    0    0         
-                                       M                                     BOOL    0 "                                                            TRUE"    1    1    1    2    0    0         
-                                 Restart                                    UDINT    0 "                                                              11"    1    7    1   10    0    0         
-                           doFeederRight                                     BOOL    0 "                                                            TRUE"    0    1    1    2    1    0         
-                             doFeederMid                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
-                        diPos2OutOfPlace                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                            ConvMainStop                                     BOOL    0 "                                                               *"    0    1    1    2    1    0         
+                               FeedCount                                    USINT    0 "                                                               *"    0    5    1   10    1    0         
+                             SorterRobot                                 RobotArm    0 "                                                               *"    0   24    1    0    1    1         
+                                    Home                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                 Getting                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                              Delivering                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                                 Stacked                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                                   Timer                                      TON    0 "                                                               *"    0   24    1    0    1    0         
+                                      IN                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                      PT                                     TIME    0 "                                                               *"    1   12    1    1    0    0         
+                                       Q                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                      ET                                     TIME    0 "                                                               *"    1   12    1    1    0    0         
+                               StartTime                                     TIME    0 "                                                               *"    1   12    1    1    0    0         
+                                       M                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                 Restart                                    UDINT    0 "                                                               *"    1    7    1   10    0    0         
+                           TimerSideConv                                      TON    0 "                                                               *"    0   24    1    0    1    0         
+                                      IN                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                      PT                                     TIME    0 "                                                               *"    1   12    1    1    0    0         
+                                       Q                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                      ET                                     TIME    0 "                                                               *"    1   12    1    1    0    0         
+                               StartTime                                     TIME    0 "                                                               *"    1   12    1    1    0    0         
+                                       M                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                 Restart                                    UDINT    0 "                                                               *"    1    7    1   10    0    0         
+                       diConvMainRunning                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                       diConvSideRunning                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                          diConvSideStop                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                         diPickingSensor                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
                         diPos1OutOfPlace                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                  diPos1OutOfPlaceWeight                                      INT    0 "                                                               0"    0    3    1   10    1    0         
+                        diPos2OutOfPlace                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                  diPos2OutOfPlaceWeight                                      INT    0 "                                                               0"    0    3    1   10    1    0         
+                              diRightPos                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                        diRightPosWeight                                     WORD    0 "                                                               0"    0   18    1   10    1    0        b
+                         doConvMainStart                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                         doConvSideStart                                     BOOL    0 "                                                            TRUE"    0    1    1    2    1    0         
                             doFeederLeft                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
-                         doConvMainStart                                     BOOL    0 "                                                            TRUE"    0    1    1    2    1    0         
-                       diConvMainRunning                                     BOOL    0 "                                                            TRUE"    0    1    1    2    1    0         
-                            ConvMainStop                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
-                                 doGoBtn                                     BOOL    0 "                                                            TRUE"    0    1    1    2    1    0         
-                               FeedCount                                    USINT    0 "                                                               0"    0    5    1   10    1    0         
-                                toPicker                                   f_trig    0 "                                                               *"    0   24    1    0    1    1         
+                             doFeederMid                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                           doFeederRight                                     BOOL    0 "                                                            TRUE"    0    1    1    2    1    0         
+                                 doGoBtn                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                           doRobotToPos1                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                           doRobotToPos2                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                            doSorterPick                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                           doStackerLeft                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                           doStackerPick                                     BOOL    0 "                                                            TRUE"    0    1    1    2    1    0         
+                          doStackerRight                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                                leftTrig                                   F_TRIG    0 "                                                               *"    0   24    1    0    1    1         
                                      CLK                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
                                        Q                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
                                        M                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
-                              toBePicked                                    USINT    0 "                                                               9"    0    5    1   10    1    0         
-                         diPickingSensor                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                         pickerRobotLeft                                 RobotArm    0 "                                                               *"    0   24    1    0    1    1         
+                                    Home                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                                 Getting                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                              Delivering                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                        pickerRobotRight                                 RobotArm    0 "                                                               *"    0   24    1    0    1    1         
+                                    Home                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                                 Getting                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                              Delivering                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                               rightTrig                                   F_TRIG    0 "                                                               *"    0   24    1    0    1    1         
+                                     CLK                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                       Q                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                       M                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                            stackingTrig                                   R_TRIG    0 "                                                               *"    0   24    1    0    1    1         
+                                     CLK                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                       Q                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                       M                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                              toBePicked                                    USINT    0 "                                                               *"    0    5    1   10    1    0         
+                                toPicker                                   F_TRIG    0 "                                                               *"    0   24    1    0    1    1         
+                                     CLK                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                       Q                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                       M                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         

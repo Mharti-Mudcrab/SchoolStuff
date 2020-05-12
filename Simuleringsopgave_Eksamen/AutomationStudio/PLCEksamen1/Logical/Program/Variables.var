@@ -14,7 +14,7 @@ VAR
 	diConvSideRunning : BOOL;
 	diConvMainRunning : BOOL;
 	diRightPos : BOOL;
-	diRightPosWeight: INT;
+	diRightPosWeight: WORD;
 	toPicker : F_TRIG;
 	rightTrig: F_TRIG;
 	leftTrig: F_TRIG;
