@@ -14,6 +14,7 @@ PROGRAM _INIT
 	Timer.PT := T#3s;
 	TimerSideConv.PT := T#4s; 
 	SorterTimer.PT := T#0.5s;
+	StackerTimer.PT := T#1s;
 END_PROGRAM
 
 PROGRAM _CYCLIC
@@ -103,11 +104,17 @@ PROGRAM _CYCLIC
 	END_IF;
 
 	IF toBePicked >= 1 THEN
-		doStackerPick := TRUE;
-	ELSIF toBePicked = 0 THEN
+		StackerTimer.IN := TRUE;
+		IF StackerTimer.Q THEN
+			doStackerPick := TRUE;
+			StackerTimer.IN := FALSE;
+		END_IF;
+	ELSE
+		StackerTimer.IN := FALSE;
 		doStackerPick := FALSE;
 	END_IF;
 	IF toBePicked <= 1 AND leftTrig.Q THEN
+		
 		toBePicked := toBePicked-1;
 	ELSIF toBePicked >= 1 AND rightTrig.Q THEN
 		toBePicked := toBePicked-1;
@@ -120,13 +127,15 @@ PROGRAM _CYCLIC
 		TimerSideConv.IN := FALSE;
 	END_IF;
 	
+	
 	TimerSideConv();
 	Timer();
 	toPicker(CLK := diPickingSensor);
 	stackingTrig(CLK := Stacked);
-	rightTrig (CLK := pickerRobotRight.Delivering);
-	leftTrig (CLK := pickerRobotLeft.Delivering);
+	rightTrig (CLK := pickerRobotRight.Getting);
+	leftTrig (CLK := pickerRobotLeft.Getting);
 	SorterTimer();
+	StackerTimer();
 			END_PROGRAM
 
 			PROGRAM _EXIT
