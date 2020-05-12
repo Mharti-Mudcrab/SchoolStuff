@@ -33,6 +33,7 @@ VAR
 	Stacked : BOOL;
 	stackingTrig : R_TRIG;
 	Timer : TON;
+	SorterTimer : TON;
 	
 	TimerSideConv: TON;
 END_VAR

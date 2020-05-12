@@ -13,6 +13,7 @@ PROGRAM _INIT
 	doRobotToPos2 := FALSE; // output til robot
 	Timer.PT := T#3s;
 	TimerSideConv.PT := T#4s; 
+	SorterTimer.PT := T#0.5s;
 END_PROGRAM
 
 PROGRAM _CYCLIC
@@ -39,9 +40,15 @@ PROGRAM _CYCLIC
 	//diConvMainStop := FALSE;
 	//END_IF;
 	
-	IF diConvMainRunning = TRUE AND diWeightScale > 300 THEN
-		doSorterPick := TRUE;
-
+	IF diWeightScale > 300 AND doGoBtn = TRUE THEN
+		SorterTimer.IN := TRUE;
+		IF SorterTimer.Q THEN
+			doSorterPick := TRUE;
+			SorterTimer.IN := FALSE;
+		END_IF;
+	ELSE
+		SorterTimer.IN := FALSE;
+		doSorterPick := FALSE;
 	END_IF;
 (*	IF diConvMainRunning = TRUE AND diPos1OutOfPlaceWeight = TRUE AND diPos2OutOfPlaceWeight = FALSE THEN
 		doRobotToPos1 := TRUE;
@@ -119,6 +126,7 @@ PROGRAM _CYCLIC
 	stackingTrig(CLK := Stacked);
 	rightTrig (CLK := pickerRobotRight.Delivering);
 	leftTrig (CLK := pickerRobotLeft.Delivering);
+	SorterTimer();
 			END_PROGRAM
 
 			PROGRAM _EXIT
