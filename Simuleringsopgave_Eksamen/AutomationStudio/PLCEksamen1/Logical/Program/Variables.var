@@ -18,6 +18,8 @@ VAR
 	toPicker : F_TRIG;
 	rightTrig: F_TRIG;
 	leftTrig: F_TRIG;
+	diDeliveryTrigRight : F_TRIG;
+	diDeliveryTrigLeft : F_TRIG;
 	diPickingSensor : BOOL;
 	toBePicked : USINT;
 	doStackerRight : BOOL;
@@ -34,6 +36,7 @@ VAR
 	stackingTrig : R_TRIG;
 	Timer : TON;
 	SorterTimer : TON;
+	StackerTimer : TON;
 	
 	TimerSideConv: TON;
 END_VAR
