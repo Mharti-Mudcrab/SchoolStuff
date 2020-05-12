@@ -39,7 +39,7 @@ PROGRAM _CYCLIC
 	//diConvMainStop := FALSE;
 	//END_IF;
 	
-	IF diConvMainRunning = TRUE AND diRightPosWeight > 300 THEN
+	IF diConvMainRunning = TRUE AND diWeightScale > 300 THEN
 		doSorterPick := TRUE;
 
 	END_IF;
