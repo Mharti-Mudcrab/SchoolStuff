@@ -1,0 +1,63 @@
+Comment: An unhandled exception was caught while processing a callback. Make sure to catch errors in callbacks to prevent this error file being produced.
+
+Base Exception Type: RobotStudio.Services.RobApi.RobApiException: C0040403 : No response from controller.
+Timeout
+Url:/IOSYSTEM/IOSIGNALS/doStackerLeftPickingUp  Cmd:Get  Prop:Prop  Args:  Elapsed:20076  CurrentCmds:1
+History:
+-00:00:22.1968105 [6883] status:SYS_CTRL_S_OK data:
+-00:00:22.1968105 [6879] status:SYS_CTRL_S_OK data:
+-00:00:22.1968105 [6880] status:SYS_CTRL_S_OK data:
+-00:00:22.1968105 [6881] status:SYS_CTRL_S_OK data:
+-00:00:22.1968105 [6884] status:SYS_CTRL_S_OK data:-Value D/u/0/0/0/0/0/0/1
+-00:00:22.1289919 [6885] SendCommand url:/IOSYSTEM/IOSIGNALS/doStackDone cmd:Get prop:Prop arg:
+-00:00:21.8377589 [6885] status:SYS_CTRL_S_OK data:-Value D/u/0/0/0/0/0/0/1
+-00:00:21.7968682 [6886] SendCommand url:/IOSYSTEM/IOSIGNALS/LeftWentLast cmd:Get prop:Prop arg:
+-00:00:21.4677366 [6886] status:SYS_CTRL_S_OK data:-Value D/u/0/0/0/0/0/0/1
+-00:00:21.4467926 [6887] SendCommand url:/IOSYSTEM/IOSIGNALS/doStackerLeftDelivering cmd:Get prop:Prop arg:
+-00:00:21.1964510 [6888] SendCommand url: cmd:Set prop:VTRun arg:
+-00:00:21.0787649 [6888] status:SYS_CTRL_S_OK data:
+-00:00:21.0468510 [6887] status:SYS_CTRL_S_OK data:-Value D/u/0/0/0/0/0/0/1
+-00:00:21.0109470 [6889] SendCommand url:/IOSYSTEM/IOSIGNALS/doStackerRightDelivering cmd:Get prop:Prop arg:
+-00:00:20.1437372 [6889] status:SYS_CTRL_S_OK data:-Value D/u/0/0/0/0/0/0/1
+-00:00:20.0764120 [6890] SendCommand url:/IOSYSTEM/IOSIGNALS/doStackerLeftPickingUp cmd:Get prop:Prop arg:
+-00:00:19.0835371 [6891] SendCommand url: cmd:Set prop:VTRun arg:
+-00:00:10.1466717 [6892] SendCommand url:/IOSYSTEM/IOSIGNALS/AS1 cmd:Get prop:Prop arg:
+-00:00:10.1466717 [6892] status:2147500037 data:127.0.0.1:InternalSendCmd() SendToRobCCom hr=0x80004005 f=c:\buildagents\agent-s...
+00:00:00 [6890] status:ROB_E_TIMEOUT data:Timeout TIMEOUT
+
+Inner Exception Type: RobotStudio.Services.RobApi.RobApiException: C0040403 : No response from controller.
+Timeout
+Url:/IOSYSTEM/IOSIGNALS/doStackerLeftPickingUp  Cmd:Get  Prop:Prop  Args:  Elapsed:20076  CurrentCmds:1
+History:
+-00:00:22.1968105 [6883] status:SYS_CTRL_S_OK data:
+-00:00:22.1968105 [6879] status:SYS_CTRL_S_OK data:
+-00:00:22.1968105 [6880] status:SYS_CTRL_S_OK data:
+-00:00:22.1968105 [6881] status:SYS_CTRL_S_OK data:
+-00:00:22.1968105 [6884] status:SYS_CTRL_S_OK data:-Value D/u/0/0/0/0/0/0/1
+-00:00:22.1289919 [6885] SendCommand url:/IOSYSTEM/IOSIGNALS/doStackDone cmd:Get prop:Prop arg:
+-00:00:21.8377589 [6885] status:SYS_CTRL_S_OK data:-Value D/u/0/0/0/0/0/0/1
+-00:00:21.7968682 [6886] SendCommand url:/IOSYSTEM/IOSIGNALS/LeftWentLast cmd:Get prop:Prop arg:
+-00:00:21.4677366 [6886] status:SYS_CTRL_S_OK data:-Value D/u/0/0/0/0/0/0/1
+-00:00:21.4467926 [6887] SendCommand url:/IOSYSTEM/IOSIGNALS/doStackerLeftDelivering cmd:Get prop:Prop arg:
+-00:00:21.1964510 [6888] SendCommand url: cmd:Set prop:VTRun arg:
+-00:00:21.0787649 [6888] status:SYS_CTRL_S_OK data:
+-00:00:21.0468510 [6887] status:SYS_CTRL_S_OK data:-Value D/u/0/0/0/0/0/0/1
+-00:00:21.0109470 [6889] SendCommand url:/IOSYSTEM/IOSIGNALS/doStackerRightDelivering cmd:Get prop:Prop arg:
+-00:00:20.1437372 [6889] status:SYS_CTRL_S_OK data:-Value D/u/0/0/0/0/0/0/1
+-00:00:20.0764120 [6890] SendCommand url:/IOSYSTEM/IOSIGNALS/doStackerLeftPickingUp cmd:Get prop:Prop arg:
+-00:00:19.0835371 [6891] SendCommand url: cmd:Set prop:VTRun arg:
+-00:00:10.1466717 [6892] SendCommand url:/IOSYSTEM/IOSIGNALS/AS1 cmd:Get prop:Prop arg:
+-00:00:10.1466717 [6892] status:2147500037 data:127.0.0.1:InternalSendCmd() SendToRobCCom hr=0x80004005 f=c:\buildagents\agent-s...
+00:00:00 [6890] status:ROB_E_TIMEOUT data:Timeout TIMEOUT
+
+
+Stack Trace:    at Adapters.IOSignalAdapter.RobGetProperties(RobIOSignalLogicalState& state, RobIOSignalValue& logical, RobIOSignalValue& physical)
+   at Adapters.IOSignalAdapter.GetState()
+   at Adapters.IOSignalAdapter.GetValue()
+   at ABB.Robotics.Controllers.IOSystemDomain.Signal.get_Value()
+   at RobotStudioExperiorAddin.ExperiorIO.signal_Changed(Object sender, SignalChangedEventArgs e)
+   at RobotStudioExperiorAddin.ExperiorIO.comm_Connected()
+   at System.Action.Invoke()
+   at Experior.RS.Communication.Server`2.ConnectionEstablished(Connection connection)
+   at NetworkCommsDotNet.Connections.Connection.<>c.<TriggerConnectionEstablishDelegates>b__27_0(Object obj)
+   at NetworkCommsDotNet.Tools.CommsThreadPool.ThreadWorker(Object state)

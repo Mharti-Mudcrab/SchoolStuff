@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version="4.7.2.98"?>
+<Objects>
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Package.pkg"
+    LogicalPath=""
+    Type="Package.ParentUnknown"
+    LastWriteTime="132337560038282368" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Global.typ"
+    LogicalPath="Global.typ"
+    Type="File"
+    LastWriteTime="132337600104561651"
+    Private="false" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Global.var"
+    LogicalPath="Global.var"
+    Type="File"
+    LastWriteTime="132337563804416816"
+    Private="false" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Libraries\Package.pkg"
+    LogicalPath="Libraries"
+    Type="Package"
+    LastWriteTime="132337579491007014" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Libraries\operator\binary.lby"
+    LogicalPath="Libraries.operator"
+    Type="Library"
+    LastWriteTime="132337558591647808" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Libraries\operator\operator.fun"
+    LogicalPath="Libraries.operator.operator.fun"
+    Type="File"
+    LastWriteTime="132337558591558044"
+    Private="false" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Libraries\operator\operator.typ"
+    LogicalPath="Libraries.operator.operator.typ"
+    Type="File"
+    LastWriteTime="132337558591617884"
+    Private="false" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Libraries\operator\operator.var"
+    LogicalPath="Libraries.operator.operator.var"
+    Type="File"
+    LastWriteTime="132337558591637832"
+    Private="false" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Libraries\runtime\binary.lby"
+    LogicalPath="Libraries.runtime"
+    Type="Library"
+    LastWriteTime="132337558594565073" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Libraries\runtime\runtime.fun"
+    LogicalPath="Libraries.runtime.runtime.fun"
+    Type="File"
+    LastWriteTime="132337558594455351"
+    Private="false" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Libraries\runtime\runtime.typ"
+    LogicalPath="Libraries.runtime.runtime.typ"
+    Type="File"
+    LastWriteTime="132337558594515193"
+    Private="false" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Libraries\runtime\runtime.var"
+    LogicalPath="Libraries.runtime.runtime.var"
+    Type="File"
+    LastWriteTime="132337558594565073"
+    Private="false" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Libraries\astime\binary.lby"
+    LogicalPath="Libraries.astime"
+    Type="Library"
+    LastWriteTime="132337558597337651" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Libraries\astime\astime.fun"
+    LogicalPath="Libraries.astime.astime.fun"
+    Type="File"
+    LastWriteTime="132337558597277809"
+    Private="false" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Libraries\astime\astime.typ"
+    LogicalPath="Libraries.astime.astime.typ"
+    Type="File"
+    LastWriteTime="132337558597297770"
+    Private="false" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Libraries\astime\astime.var"
+    LogicalPath="Libraries.astime.astime.var"
+    Type="File"
+    LastWriteTime="132337558597337651"
+    Private="false" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Libraries\AsIecCon\binary.lby"
+    LogicalPath="Libraries.AsIecCon"
+    Type="Library"
+    LastWriteTime="132337558600184969" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Libraries\AsIecCon\AsIecCon.fun"
+    LogicalPath="Libraries.AsIecCon.AsIecCon.fun"
+    Type="File"
+    LastWriteTime="132337558600145083"
+    Private="false" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Libraries\AsIecCon\AsIecCon.typ"
+    LogicalPath="Libraries.AsIecCon.AsIecCon.typ"
+    Type="File"
+    LastWriteTime="132337558600165028"
+    Private="false" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Libraries\AsIecCon\AsIecCon.var"
+    LogicalPath="Libraries.AsIecCon.AsIecCon.var"
+    Type="File"
+    LastWriteTime="132337558600175013"
+    Private="false" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Libraries\standard\binary.lby"
+    LogicalPath="Libraries.standard"
+    Type="Library"
+    LastWriteTime="132337579490787598" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Libraries\standard\standard.fun"
+    LogicalPath="Libraries.standard.standard.fun"
+    Type="File"
+    LastWriteTime="132337579490722193"
+    Private="false" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Libraries\standard\standard.typ"
+    LogicalPath="Libraries.standard.standard.typ"
+    Type="File"
+    LastWriteTime="132337579490742150"
+    Private="false" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Libraries\standard\standard.var"
+    LogicalPath="Libraries.standard.standard.var"
+    Type="File"
+    LastWriteTime="132337579490787598"
+    Private="false" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Feed_Conv\IEC.prg"
+    LogicalPath="Feed_Conv"
+    Type="Program"
+    LastWriteTime="132337559062690522" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Feed_Conv\Main.st"
+    LogicalPath="Feed_Conv.Main.st"
+    Type="File"
+    LastWriteTime="132338488429192627"
+    Private="false" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Feed_Conv\Types.typ"
+    LogicalPath="Feed_Conv.Types.typ"
+    Type="File"
+    LastWriteTime="132337559062680541"
+    Private="true" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Feed_Conv\Variables.var"
+    LogicalPath="Feed_Conv.Variables.var"
+    Type="File"
+    LastWriteTime="132337580432045668"
+    Private="true" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Sorter\IEC.prg"
+    LogicalPath="Sorter"
+    Type="Program"
+    LastWriteTime="132337560038262417" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Sorter\Main.st"
+    LogicalPath="Sorter.Main.st"
+    Type="File"
+    LastWriteTime="132337776131339206"
+    Private="false" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Sorter\Types.typ"
+    LogicalPath="Sorter.Types.typ"
+    Type="File"
+    LastWriteTime="132337560038252452"
+    Private="true" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Sorter\Variables.var"
+    LogicalPath="Sorter.Variables.var"
+    Type="File"
+    LastWriteTime="132337653825072996"
+    Private="true" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Stacker\IEC.prg"
+    LogicalPath="Stacker"
+    Type="Program"
+    LastWriteTime="132337559569429561" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Stacker\Main.st"
+    LogicalPath="Stacker.Main.st"
+    Type="File"
+    LastWriteTime="132338590378328776"
+    Private="false" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Stacker\Types.typ"
+    LogicalPath="Stacker.Types.typ"
+    Type="File"
+    LastWriteTime="132337559569419589"
+    Private="true" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Logical\Stacker\Variables.var"
+    LogicalPath="Stacker.Variables.var"
+    Type="File"
+    LastWriteTime="132338570102340629"
+    Private="true" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Physical\X20CP1382\Config.pkg"
+    LogicalPath="X20CP1382"
+    Type="Configuration.ParentUnknown"
+    LastWriteTime="132337558623134098" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Physical\X20CP1382\Hardware.hw"
+    LogicalPath="X20CP1382.Hardware.hw"
+    Type="File"
+    LastWriteTime="132338543157117992"
+    Private="false" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Physical\X20CP1382\Hardware.hwl"
+    LogicalPath="X20CP1382.Hardware.hwl"
+    Type="File"
+    LastWriteTime="132337770940176737"
+    Private="false" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Physical\X20CP1382\X20CP1382\Cpu.pkg"
+    LogicalPath="X20CP1382.X20CP1382"
+    Type="Cpu"
+    LastWriteTime="132337558607734710" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Physical\X20CP1382\X20CP1382\Cpu.sw"
+    LogicalPath="X20CP1382.X20CP1382.Cpu.sw"
+    Type="File"
+    LastWriteTime="132337771239757161"
+    Private="false" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Physical\X20CP1382\X20CP1382\Cpu.per"
+    LogicalPath="X20CP1382.X20CP1382.Cpu.per"
+    Type="File"
+    LastWriteTime="132337558605431126"
+    Private="false" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Physical\X20CP1382\X20CP1382\IoMap.iom"
+    LogicalPath="X20CP1382.X20CP1382.IoMap.iom"
+    Type="File"
+    LastWriteTime="132337558605501262"
+    Private="false" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Physical\X20CP1382\X20CP1382\PvMap.vvm"
+    LogicalPath="X20CP1382.X20CP1382.PvMap.vvm"
+    Type="File"
+    LastWriteTime="132337558605560769"
+    Private="false" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Physical\X20CP1382\X20CP1382\Connectivity\Package.pkg"
+    LogicalPath="X20CP1382.X20CP1382.Connectivity"
+    Type="Package"
+    LastWriteTime="132337558605968571" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Physical\X20CP1382\X20CP1382\Connectivity\OpcUA\Package.pkg"
+    LogicalPath="X20CP1382.X20CP1382.Connectivity.OpcUA"
+    Type="Package"
+    LastWriteTime="132337558605928410" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Physical\X20CP1382\X20CP1382\TextSystem\Package.pkg"
+    LogicalPath="X20CP1382.X20CP1382.TextSystem"
+    Type="Package"
+    LastWriteTime="132337558606068039" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Physical\X20CP1382\X20CP1382\UnitSystem\Package.pkg"
+    LogicalPath="X20CP1382.X20CP1382.UnitSystem"
+    Type="Package"
+    LastWriteTime="132337558606177729" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Physical\X20CP1382\X20CP1382\AccessAndSecurity\Package.pkg"
+    LogicalPath="X20CP1382.X20CP1382.AccessAndSecurity"
+    Type="Package"
+    LastWriteTime="132337558607185330" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Physical\X20CP1382\X20CP1382\AccessAndSecurity\UserRoleSystem\Package.pkg"
+    LogicalPath="X20CP1382.X20CP1382.AccessAndSecurity.UserRoleSystem"
+    Type="Package"
+    LastWriteTime="132337558606427058" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Physical\X20CP1382\X20CP1382\AccessAndSecurity\UserRoleSystem\Role.role"
+    LogicalPath="X20CP1382.X20CP1382.AccessAndSecurity.UserRoleSystem.Role.role"
+    Type="File"
+    LastWriteTime="132337558606407111"
+    Private="false" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Physical\X20CP1382\X20CP1382\AccessAndSecurity\UserRoleSystem\User.user"
+    LogicalPath="X20CP1382.X20CP1382.AccessAndSecurity.UserRoleSystem.User.user"
+    Type="File"
+    LastWriteTime="132337558606427058"
+    Private="false" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Physical\X20CP1382\X20CP1382\AccessAndSecurity\CertificateStore\Package.pkg"
+    LogicalPath="X20CP1382.X20CP1382.AccessAndSecurity.CertificateStore"
+    Type="Package"
+    LastWriteTime="132337558606965624" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Physical\X20CP1382\X20CP1382\AccessAndSecurity\CertificateStore\OwnCertificates\Package.pkg"
+    LogicalPath="X20CP1382.X20CP1382.AccessAndSecurity.CertificateStore.OwnCertificates"
+    Type="Package"
+    LastWriteTime="132337558606616558" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Physical\X20CP1382\X20CP1382\AccessAndSecurity\CertificateStore\OwnCertificates\Certificates\Package.pkg"
+    LogicalPath="X20CP1382.X20CP1382.AccessAndSecurity.CertificateStore.OwnCertificates.Certificates"
+    Type="Package"
+    LastWriteTime="132337558606517246" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Physical\X20CP1382\X20CP1382\AccessAndSecurity\CertificateStore\OwnCertificates\PrivateKeys\Package.pkg"
+    LogicalPath="X20CP1382.X20CP1382.AccessAndSecurity.CertificateStore.OwnCertificates.PrivateKeys"
+    Type="Package"
+    LastWriteTime="132337558606576659" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Physical\X20CP1382\X20CP1382\AccessAndSecurity\CertificateStore\ThirdPartyCertificates\Package.pkg"
+    LogicalPath="X20CP1382.X20CP1382.AccessAndSecurity.CertificateStore.ThirdPartyCertificates"
+    Type="Package"
+    LastWriteTime="132337558606776127" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Physical\X20CP1382\X20CP1382\AccessAndSecurity\CertificateStore\ThirdPartyCertificates\SoftwareCertificates\Package.pkg"
+    LogicalPath="X20CP1382.X20CP1382.AccessAndSecurity.CertificateStore.ThirdPartyCertificates.SoftwareCertificates"
+    Type="Package"
+    LastWriteTime="132337558606726551" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Physical\X20CP1382\X20CP1382\AccessAndSecurity\CertificateStore\CertificateRevocationLists\Package.pkg"
+    LogicalPath="X20CP1382.X20CP1382.AccessAndSecurity.CertificateStore.CertificateRevocationLists"
+    Type="Package"
+    LastWriteTime="132337558606866177" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Physical\X20CP1382\X20CP1382\AccessAndSecurity\CertificateStore\CertificateSigningRequests\Package.pkg"
+    LogicalPath="X20CP1382.X20CP1382.AccessAndSecurity.CertificateStore.CertificateSigningRequests"
+    Type="Package"
+    LastWriteTime="132337558606925832" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Physical\X20CP1382\X20CP1382\AccessAndSecurity\TransportLayerSecurity\Package.pkg"
+    LogicalPath="X20CP1382.X20CP1382.AccessAndSecurity.TransportLayerSecurity"
+    Type="Package"
+    LastWriteTime="132337558607025471" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Physical\X20CP1382\X20CP1382\AccessAndSecurity\Firewall\Package.pkg"
+    LogicalPath="X20CP1382.X20CP1382.AccessAndSecurity.Firewall"
+    Type="Package"
+    LastWriteTime="132337558607135174" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Physical\X20CP1382\X20CP1382\AccessAndSecurity\Firewall\Rules.firewallRules"
+    LogicalPath="X20CP1382.X20CP1382.AccessAndSecurity.Firewall.Rules.firewallRules"
+    Type="File"
+    LastWriteTime="132337558607135174"
+    Private="false" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Physical\X20CP1382\X20CP1382\mappControl\Package.pkg"
+    LogicalPath="X20CP1382.X20CP1382.mappControl"
+    Type="Package"
+    LastWriteTime="132337558607304726" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Physical\X20CP1382\X20CP1382\mappMotion\Package.pkg"
+    LogicalPath="X20CP1382.X20CP1382.mappMotion"
+    Type="Package"
+    LastWriteTime="132337558607384506" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Physical\X20CP1382\X20CP1382\mappServices\Package.pkg"
+    LogicalPath="X20CP1382.X20CP1382.mappServices"
+    Type="Package"
+    LastWriteTime="132337558607464301" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Physical\X20CP1382\X20CP1382\mappView\Package.pkg"
+    LogicalPath="X20CP1382.X20CP1382.mappView"
+    Type="Package"
+    LastWriteTime="132337558607573991" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Physical\X20CP1382\X20CP1382\mappCockpit\Package.pkg"
+    LogicalPath="X20CP1382.X20CP1382.mappCockpit"
+    Type="Package"
+    LastWriteTime="132337558607694570" />
+  <Object
+    Path="C:\projects\Sim_Eksamen_Test\Physical\X20CP1382\Hardware.jpg"
+    LogicalPath="X20CP1382.Hardware.jpg"
+    Type="File"
+    LastWriteTime="132337770940286440"
+    Private="false" />
+</Objects>

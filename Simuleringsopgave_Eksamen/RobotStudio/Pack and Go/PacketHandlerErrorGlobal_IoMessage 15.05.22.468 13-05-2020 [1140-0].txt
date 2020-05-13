@@ -1,0 +1,12 @@
+Base Exception Type: System.NullReferenceException: Object reference not set to an instance of an object.
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at RobotStudioExperiorAddin.ExperiorIO.comm_MessageReceived(IoMessage msg)
+   at Experior.RS.Communication.Server`2.PacketHandler(PacketHeader packetHeader, Connection conn, T2 incomingObject)
+   at NetworkCommsDotNet.Tools.PacketTypeHandlerDelegateWrapper`1.Process(PacketHeader packetHeader, Connection connection, Object obj)
+   at NetworkCommsDotNet.NetworkComms.TriggerGlobalPacketHandlers(PacketHeader packetHeader, Connection connection, Object returnObject, Boolean ignoreUnknownPacketTypeOverride)
+
+Stack Trace:    at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at RobotStudioExperiorAddin.ExperiorIO.comm_MessageReceived(IoMessage msg)
+   at Experior.RS.Communication.Server`2.PacketHandler(PacketHeader packetHeader, Connection conn, T2 incomingObject)
+   at NetworkCommsDotNet.Tools.PacketTypeHandlerDelegateWrapper`1.Process(PacketHeader packetHeader, Connection connection, Object obj)
+   at NetworkCommsDotNet.NetworkComms.TriggerGlobalPacketHandlers(PacketHeader packetHeader, Connection connection, Object returnObject, Boolean ignoreUnknownPacketTypeOverride)

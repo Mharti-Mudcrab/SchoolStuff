@@ -1,0 +1,18 @@
+WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=Stacker 
+Position X=0 Y=0 Width=0 Height=0 TabWidth Name=150 Type=0 Scope=0 Force=0 Index=14 ASCIIString=0
+                                    name                                     type force                                                            value level type len format place expand specs
+                         pickerRobotLeft                                 RobotArm    0 "                                                               *"    0   24    1    0    1    1         
+                                    Home                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                                 Getting                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                              Delivering                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                        pickerRobotRight                                 RobotArm    0 "                                                               *"    0   24    1    0    1    1         
+                                    Home                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                                 Getting                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                              Delivering                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                                 diGoBtn                                     BOOL    0 "                                                            TRUE"    0    1    1    2    0    0         
+                       diStackerLeftDone                                     BOOL    0 "                                                               *"    0    1    1    2    1    0         
+                      diStackerRightDone                                     BOOL    0 "                                                               *"    0    1    1    2    1    0         
+                           doStackerPick                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                      doStackerInputBelt                                     BOOL    0 "                                                            TRUE"    0    1    1    2    1    0         
+                    diStackerInputSensor                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                              stackCount                                    USINT    0 "                                                               9"    0    5    1   10    1    0         

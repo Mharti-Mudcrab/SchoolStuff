@@ -1,0 +1,9 @@
+VAR
+	TON_Timer : TON;
+	doConvSideStart : BOOL;
+	doFeederMid : BOOL;
+	doFeederLeft : BOOL;
+	doFeederRight : BOOL;
+	doConvMainStart : BOOL;
+	FeedCount : USINT;
+END_VAR
