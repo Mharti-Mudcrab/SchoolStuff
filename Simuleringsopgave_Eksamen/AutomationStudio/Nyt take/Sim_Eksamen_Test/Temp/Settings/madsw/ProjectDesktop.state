@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<?AutomationStudio Version=3.0?>
+<Project xmlns="http://br-automation.co.at/AS/Project"><Active ID="0"/><Configuration Name="X20CP1382"/><ConfigurationFiles ConfigurationName="X20CP1382" ActiveConfigurationFile="\Logical\Stacker\Main.st"><ConfigurationFile Placement="\Logical\Feed_Conv\Main.st,Feed_Conv,2,44,0,1,-1,-1,-1,-1,2,24,656,938"/><ConfigurationFile Placement="\Logical\Stacker\Main.st,Stacker,2,44,0,1,-1,-1,-1,-1,2,24,656,938"/><ConfigurationFile Placement="\Logical\Sorter\Main.st,Sorter,2,44,0,1,-1,-1,-1,-1,2,24,656,938"/><ConfigurationFile Placement="\Logical\Stacker\Variables.var,Stacker,1,44,0,1,-1,-1,-1,-1,2,24,656,938"/></ConfigurationFiles></Project>

@@ -1,0 +1,15 @@
+VAR
+	doSorterPick : BOOL;
+	diRightPos : BOOL;
+	diPos2OutOfPlace : BOOL;
+	diPos1OutOfPlace : BOOL;
+	diPos1OutOfPlaceWeight : INT;
+	diPos2OutOfPlaceWeight : INT;
+	diWeightScale : WORD;
+	R_TRIG_RightPos : R_TRIG;
+	R_TRIG_PickInitiated : R_TRIG;
+	TON_OffTimer : TON;
+	TON_DelayTimer : TON;
+	sorterRobot : RobotArm;
+	bigBoxDetected : BOOL;
+END_VAR

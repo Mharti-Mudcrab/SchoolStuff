@@ -1,0 +1,54 @@
+Thu May 14 12:48:37 2020
+COPYRIGHT (C) B&R Industrial Automation GmbH
+
+Thu May 14 12:48:37 2020
+No ARsim registration found!
+
+Thu May 14 12:48:37 2020
+InstanceName: 01d629dd38e8cb20
+
+Thu May 14 12:48:37 2020
+WorkingDirectory: C:\Users\madsw\Documents\GitHub\SchoolStuff\Simuleringsopgave_Eksamen\AutomationStudio\Nyt take\Sim_Eksamen_Test\Temp\Simulation\X20CP1382\X20CP1382\
+
+Thu May 14 12:48:37 2020
+COMMAND_COLDSTART
+
+Thu May 14 12:48:39 2020
+Version: C4.72
+
+Thu May 14 12:51:19 2020
+COMMAND_TERMINATE
+
+Thu May 14 12:51:21 2020
+COMMAND_COLDSTART
+
+Thu May 14 12:51:23 2020
+Version: C4.72
+
+Thu May 14 14:50:10 2020
+COMMAND_TERMINATE
+
+Thu May 14 14:50:11 2020
+COMMAND_COLDSTART
+
+Thu May 14 14:50:13 2020
+Version: C4.72
+
+Thu May 14 15:01:52 2020
+COMMAND_TERMINATE
+
+Thu May 14 15:09:00 2020
+COMMAND_COLDSTART
+
+Thu May 14 15:09:02 2020
+Version: C4.72
+
+Thu May 14 15:09:16 2020
+COMMAND_TERMINATE
+
+Thu May 14 15:09:17 2020
+COMMAND_COLDSTART
+
+Thu May 14 15:09:19 2020
+Version: C4.72
+

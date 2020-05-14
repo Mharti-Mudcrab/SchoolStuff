@@ -1,0 +1,21 @@
+Thu May 14 16:23:22 2020
+COPYRIGHT (C) B&R Industrial Automation GmbH
+
+Thu May 14 16:23:22 2020
+No ARsim registration found!
+
+Thu May 14 16:23:22 2020
+InstanceName: 01d629fb38d854c0
+
+Thu May 14 16:23:22 2020
+WorkingDirectory: C:\Users\madsw\Documents\GitHub\SchoolStuff\Simuleringsopgave_Eksamen\AutomationStudio\Nyt take\Sim_Eksamen_Test1\Temp\Simulation\X20CP1382\X20CP1382\
+
+Thu May 14 16:23:22 2020
+COMMAND_COLDSTART
+
+Thu May 14 16:23:24 2020
+Version: C4.72
+
+Thu May 14 16:23:30 2020
+COMMAND_TERMINATE
+
