@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Transfer xmlns="http://br-automation.co.at/AS/Transfer">
+  <OperatingSystem Version="C4.72"/>
+  <Hardware Target="SG4"/>
+  <Operation Delete="Feed_Conv.br"/>
+  <Operation Delete="Sorter.br"/>
+  <Operation Delete="Stacker.br"/>
+  <Operation Delete="asieccon.br"/>
+  <Operation Delete="astime.br"/>
+  <Operation Download="ashwd.br" Memory="SystemROM"/>
+  <Operation Download="asfw.br" Memory="SystemROM"/>
+  <Operation Download="arconfig.br" Memory="SystemROM"/>
+  <Operation Download="sysconf.br" Memory="SystemROM"/>
+  <Operation Restart="warm"/>
+  <Operation Download="FWRules.br" Memory="UserROM"/>
+  <Operation Download="udbdef.br" Memory="UserROM"/>
+  <Operation Download="TCData.br" Memory="SystemROM"/>
+  <Operation Download="User.br" Memory="UserROM"/>
+  <Operation Download="iomap.br" Memory="UserROM"/>
+  <Operation Download="Role.br" Memory="UserROM"/>
+  <Operation Download="ashwac.br" Memory="UserROM"/>
+  <Operation Download="standard.br" Memory="UserROM"/>
+  <Operation Download="runtime.br" Memory="UserROM"/>
+  <Operation Download="astime.br" Memory="UserROM"/>
+  <Operation Download="asieccon.br" Memory="UserROM"/>
+  <Operation Download="Stacker.br" Memory="UserROM"/>
+  <Operation Download="Sorter.br" Memory="UserROM"/>
+  <Operation Download="Feed_Conv.br" Memory="UserROM"/>
+</Transfer>
